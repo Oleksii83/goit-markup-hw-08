@@ -1,8 +1,8 @@
 .social-list-div {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 122px;
+  padding-right: 122px;
   padding-top: 15px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .social-list {
@@ -41,5 +41,23 @@
   &:hover .social-list-icon,
   &:focus .social-list-icon {
     fill: var(--background-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-list-div {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-top: 15px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list-div {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
   }
 }
