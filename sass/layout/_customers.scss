@@ -1,0 +1,75 @@
+.regular-customers {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.customer-list {
+  display: flex;
+  display: inline-flex;
+}
+.customer-list-item {
+  margin-top: 50px;
+  margin-right: 30px;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  transition: 250ms linear;
+
+  &:last-child {
+    margin-right: none;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.customer-one {
+  width: 170px;
+  height: 90px;
+  content: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .customer-list-icon,
+  &:focus .customer-list-icon {
+    fill: var(--accent-color);
+  }
+}
+
+.customer-list-icon {
+  fill: var(--icon-color);
+  transition: 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms linear;
+}
+.size-one {
+  width: 45px;
+  height: 50px;
+}
+
+.size-two {
+  width: 45px;
+  height: 50px;
+}
+.size-three {
+  width: 41px;
+  height: 42px;
+}
+.size-four {
+  width: 80px;
+  height: 42px;
+}
+.size-five {
+  width: 59px;
+  height: 47px;
+}
+.size-six {
+  width: 45px;
+  height: 50px;
+}

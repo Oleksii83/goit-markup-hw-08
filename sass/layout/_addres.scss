@@ -1,0 +1,60 @@
+.address {
+  display: flex;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.icon-addres {
+  display: flex;
+  justify-content: center;
+}
+.addres-svg {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-tel {
+  display: flex;
+  justify-content: center;
+}
+.tel-svg {
+  position: relative;
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+  fill: #757575;
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.addres-title {
+  margin-right: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--tilt-color);
+  transition: 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:last-child {
+    margin-right: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &:hover .tel-svg,
+  &:focus .tel-svg {
+    fill: var(--accent-color);
+  }
+  &:hover .addres-svg,
+  &:focus .addres-svg {
+    fill: var(--accent-color);
+  }
+}

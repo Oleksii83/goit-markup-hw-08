@@ -1,0 +1,31 @@
+.size-container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .size-container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .size-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .size-container {
+    width: 1200px;
+  }
+}
+
+// .size-conteiner {
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+// }

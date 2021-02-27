@@ -1,0 +1,45 @@
+.social-list-div {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.social-list {
+  display: flex;
+
+  &:last-child {
+    margin: none;
+  }
+}
+.social-list-item {
+  margin-right: 10px;
+}
+.social-list-icon {
+  fill: var(--icon-color);
+  width: 20px;
+  height: 20px;
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+
+  &:hover .social-list-icon,
+  &:focus .social-list-icon {
+    fill: var(--background-color);
+  }
+}
