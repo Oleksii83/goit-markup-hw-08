@@ -25,9 +25,6 @@
   border-radius: 4px;
   transition: 250ms linear;
 
-  &:nth-child(2n) {
-    margin-right: 0px;
-  }
   &:hover,
   &:focus {
     border-color: var(--accent-color);
@@ -82,11 +79,37 @@
   width: 45px;
   height: 50px;
 }
+@media screen and (max-width: 767px) {
+  .customer-list-item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
 
-// .regular-customers {
-//   padding-top: 95px;
-//   padding-bottom: 95px;
-// }
+@media screen and (min-width: 768px) {
+  .customer-list-item {
+    width: 226px;
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+
+  .customer-list-item {
+    width: 170px;
+  }
+  .customer-list-item:nth-child(3n) {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
 
 // .customer-list {
 //   display: flex;
