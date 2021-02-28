@@ -1,25 +1,33 @@
 .regular-customers {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.customer-heading {
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .customer-list {
   display: flex;
   display: inline-flex;
+  flex-wrap: wrap;
 }
+
 .customer-list-item {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-right: 30px;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   transition: 250ms linear;
 
-  &:last-child {
-    margin-right: none;
+  &:nth-child(2n) {
+    margin-right: 0px;
   }
-
   &:hover,
   &:focus {
     border-color: var(--accent-color);
@@ -27,8 +35,8 @@
 }
 
 .customer-one {
-  width: 170px;
-  height: 90px;
+  width: 100%;
+  height: 100%;
   content: '';
   display: flex;
   justify-content: center;
@@ -48,6 +56,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms linear;
 }
+
 .size-one {
   width: 45px;
   height: 50px;
@@ -73,3 +82,54 @@
   width: 45px;
   height: 50px;
 }
+
+// .regular-customers {
+//   padding-top: 95px;
+//   padding-bottom: 95px;
+// }
+
+// .customer-list {
+//   display: flex;
+//   display: inline-flex;
+// }
+// .customer-list-item {
+//   margin-top: 50px;
+//   margin-right: 30px;
+//   width: 170px;
+//   height: 90px;
+//   border: 1px solid var(--icon-color);
+//   border-radius: 4px;
+//   transition: 250ms linear;
+
+//   &:last-child {
+//     margin-right: none;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     border-color: var(--accent-color);
+//   }
+// }
+
+// .customer-one {
+//   width: 170px;
+//   height: 90px;
+//   content: '';
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   transition: 250ms linear;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover .customer-list-icon,
+//   &:focus .customer-list-icon {
+//     fill: var(--accent-color);
+//   }
+// }
+
+// .customer-list-icon {
+//   fill: var(--icon-color);
+//   transition: 250ms linear;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   transition: fill 250ms linear;
+// }
