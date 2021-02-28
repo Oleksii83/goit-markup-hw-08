@@ -1,12 +1,12 @@
 .social-list-div {
-  padding-left: 122px;
-  padding-right: 122px;
   padding-top: 15px;
   padding-bottom: 24px;
 }
 
 .social-list {
+  min-width: 206px;
   display: flex;
+  justify-content: center;
 
   &:last-child {
     margin: none;
