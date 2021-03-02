@@ -98,9 +98,9 @@
       transform: translateX(-50%) translateY(0);
     }
   }
-  // .mobile__menu-nav {
-  //   padding-bottom: 300px;
-  // }
+  .mobile__menu-nav {
+    margin-bottom: 300px;
+  }
   .mobile__text-studio {
     position: relative;
     font-weight: 500;
@@ -147,13 +147,13 @@
   }
   .mobile-menu-social-list {
     display: flex;
-    align-items: center;
+    // align-items: center;
     bottom: 0px;
   }
   .mobile-address-list {
     margin-bottom: 64px;
   }
-  .mobile__tel-link {
+  .mobile__address-list-item {
     padding-bottom: 32px;
   }
 
