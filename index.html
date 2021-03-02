@@ -19,8 +19,8 @@
   </head>
   <body>
     <!--navigation-->
-    <!-- <header class="header-container">
-      <div class="nav-container size-conteiner">
+    <header class="header-container">
+      <div class="nav-container size-container">
         <a class="logo" href="WebStudio"
           ><span class="icon-blue">Web</span
           ><span class="icon-bk">Studio</span></a
@@ -40,28 +40,79 @@
             </li>
           </ul>
         </nav>
+        <button class="menu__btn" data-menu-button>
+          <svg class="menu__icon">
+            <use href="./img/icon/sprite.svg#header-menu"></use>
+          </svg>
+        </button>
         <!--contacts-->
-    <!-- <ul class="address">
-          <li class="icon-addres">
-            <a class="addres-title" href="mailto:info@devstudio.com">
-              <svg class="addres-svg">
-                <use href="./img/icon/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="icon-tel">
-            <a class="addres-title icon-tel" href="tel:+380961111111">
-              <svg class="tel-svg">
-                <use href="./img/icon/sprite.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul> -->
-    <!-- </div>
-    </header> -->
-    -->
+        <div class="addres__container">
+          <ul class="address">
+            <li class="icon-addres">
+              <a class="addres-title" href="mailto:info@devstudio.com">
+                <svg class="addres-svg">
+                  <use href="./img/icon/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="icon-tel">
+              <a class="addres-title icon-tel" href="tel:+380961111111">
+                <svg class="tel-svg">
+                  <use href="./img/icon/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+     
+      <div class="mobile__menu" data-menu>
+          <button type="button" class="mobile__close-btn" data-menu-close>
+            <svg class="mobile__close-icon">
+              <use href="./img/icon/sprite.svg#header-close"></use>
+            </svg>
+          </button>
+        <div class="mobile__container-menu-nav">
+          <ul class="mobile__menu-nav">
+            <li>
+              <div class="studio">
+                <a class="mobile__text-studio" href="Студия">Студия</a>
+              </div>
+            </li>
+            <li>
+              <a class="mobile__site-nav" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li>
+              <a class="mobile__contact-nav" href="Контакты">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobile-address-list">
+                    <li class="mobile__address-list-item">
+                        <a class="mobile__tel-link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile__address-list-item">
+                        <a class="mobile__mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu-social-list">
+                    <li class="mobile-menu-social-list-item">
+                        <a href="" class="mobile-menu-social-link">Instagram</a>
+                    </li>
+                    <li class="mobile-menu-social-list-item">
+                        <a href="" class="mobile-menu-social-link">Twitter</a>
+                    </li>
+                    <li class="mobile-menu-social-list-item">
+                        <a href="" class="mobile-menu-social-link">Facebook</a>
+                    </li>
+                    <li class="mobile-menu-social-list-item">
+                        <a href="" class="mobile-menu-social-link">LinkedIn</a>
+                    </li>
+                </ul>
+        </div>
+      </div>
+    </header>
+
     <main>
       <!--Hero-->
       <section class="hero">
@@ -731,6 +782,8 @@
 
     <!-- script modal -->
     <script src="./js/modal.js"></script>
+    <!-- script mobile -->
+    <script src="./js/mobile-menu.js"></script>
 
     <!-- console -->
     <script>
