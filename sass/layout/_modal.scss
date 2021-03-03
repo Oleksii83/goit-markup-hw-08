@@ -3,8 +3,6 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -54,9 +52,10 @@
 .modal-text {
   padding-top: 40px;
   font-weight: 700;
+  max-width: 370px;
   font-size: 20px;
-  line-height: 23px;
-  text-align: center;
+  line-height: 1.15;
+
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -80,7 +79,7 @@
 }
 .input-line {
   padding-left: 42px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   left: 576px;
   top: 450px;
@@ -150,8 +149,7 @@
   display: flex none;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
+  line-height: 1.714;
 
   letter-spacing: 0.03em;
 
@@ -211,13 +209,13 @@ textarea {
 }
 
 .coment-text::before {
-  margin-left: 10px;
   display: inline-block;
   background-image: url('../img/modal/checkbox.svg');
   content: '';
   width: 16px;
   height: 15px;
   margin-right: 8px;
+  margin-left: 10px;
 }
 
 .licension-text {
@@ -251,4 +249,40 @@ textarea {
   letter-spacing: 0.06em;
 
   color: #ffffff;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 95%;
+    height: 95%;
+    max-width: 450px;
+    max-height: 609px;
+    overflow: scroll;
+  }
+  .modal-text {
+    padding-left: 53px;
+  }
+
+  textarea,
+  .input-line {
+    max-width: 370px;
+  }
+  .licension-text,
+  .coment-text {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+  .coment-text::before {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal-text {
+    padding-left: 40px;
+  }
 }
