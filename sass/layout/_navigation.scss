@@ -141,7 +141,15 @@
   .mobile__address-list-item {
     padding-bottom: 32px;
   }
-
+  .mobile-menu-social-inst {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.122;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
   .mobile-menu-social-link {
     display: list-item;
     text-align: -webkit-match-parent;
