@@ -63,7 +63,7 @@
     flex-wrap: wrap;
   }
   .comand__li {
-    width: 354px;
+    max-width: 354px;
   }
   .comand__list:nth-child(3n) {
     margin-bottom: 0px;
