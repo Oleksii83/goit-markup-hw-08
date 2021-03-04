@@ -1424,9 +1424,10 @@ img {
 .modal-text {
   padding-top: 40px;
   font-weight: 700;
-  max-width: 370px;
+  text-align: center;
   font-size: 20px;
   line-height: 1.15;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -1674,7 +1675,7 @@ textarea {
     overflow: scroll;
   }
   .modal-text {
-    padding-left: 53px;
+    padding-left: 10px;
   }
   textarea,
   .input-line {
@@ -1695,9 +1696,6 @@ textarea {
   .modal {
     width: 528px;
     height: 581px;
-  }
-  .modal-text {
-    padding-left: 40px;
   }
 }
 
