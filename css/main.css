@@ -1883,6 +1883,8 @@ textarea {
 }
 
 .project-img-portfolio {
+  max-width: 450px;
+  max-height: 4404px;
   margin-bottom: 30px;
   background: #ffffff;
   border: 1px solid #eeeeee;
@@ -1911,14 +1913,14 @@ textarea {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-}
-
-@media screen and (max-width: 1199px) {
   .project-img-portfolio {
     max-width: 354px;
     max-height: 440px;
     margin-right: 30px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .project-img-portfolio:nth-child(2n) {
     margin-right: 0px;
   }
@@ -1934,8 +1936,8 @@ textarea {
   }
   .project-img-portfolio {
     max-width: 370px;
-    margin-right: 30px;
     max-height: 404px;
+    margin-right: 30px;
   }
   .project-img-portfolio:nth-child(3n) {
     margin-right: 0px;
