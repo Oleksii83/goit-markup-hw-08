@@ -536,8 +536,8 @@ img {
   margin-right: auto;
   padding-top: 118px;
   background: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/mobile/Hero@1x.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile/Hero@1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/mobile/Hero-mob.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile/Hero-mob.png");
   text-align: center;
   height: 400px;
   background-color: var(--background-footer);
@@ -588,17 +588,23 @@ img {
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/mobile/hero-tablet@1x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile/hero-tablet@1x.jpg");
+    background-image: url("../img/mobile/Hero-tab@2x.png");
   }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  background-image: url("../img/mobile/Hero-tab.png");
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/main/hero.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/main/hero.jpg");
+    background-image: url("../img/mobile/Hero-desk.png");
   }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  background-image: url("../img/mobile/Hero-desk@2x.png");
 }
 
 .points-section {
@@ -1304,6 +1310,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer-list {
+    padding-bottom: 0px;
+  }
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
