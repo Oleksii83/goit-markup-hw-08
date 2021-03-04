@@ -65,6 +65,10 @@
   }
 
   .mobile__menu {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 100;
     position: absolute;
     width: 100%;
     max-width: 480px;
@@ -86,7 +90,7 @@
     }
   }
   .mobile__menu-nav {
-    margin-bottom: 250px;
+    margin-bottom: 150px;
   }
   .mobile__list {
     margin-bottom: 32px;
@@ -144,7 +148,7 @@
     bottom: 0px;
   }
   .mobile-address-list {
-    margin-bottom: 64px;
+    margin-bottom: 45px;
   }
   .mobile__address-list-item {
     padding-bottom: 32px;
