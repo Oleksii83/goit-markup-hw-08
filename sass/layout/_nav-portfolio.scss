@@ -44,7 +44,7 @@
   align-items: center;
 }
 
-.button-navigate {
+.flex-button-item {
   margin-top: 60px;
 }
 .flex-button-item {
@@ -95,12 +95,12 @@
     flex-wrap: wrap;
     justify-content: left;
   }
-  .button-navigate {
+  .flex-button-item {
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
-  .button-navigate {
+  .flex-button-item {
     margin-bottom: 30px;
     flex-wrap: nowrap;
   }
@@ -109,7 +109,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .button-navigate {
+  .flex-button-item {
     margin-top: 94px;
     margin-bottom: 50px;
   }
