@@ -13,7 +13,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    top: 52px;
+    top: 46px;
     margin-bottom: -1px;
     background-color: var(--accent-color);
     height: 4px;
@@ -34,8 +34,8 @@
 .header-container-portfolio {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 32px;
-  padding-top: 32px;
+  // padding-bottom: 32px;
+  // padding-top: 32px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -45,16 +45,24 @@
 }
 
 .button-navigate {
-  margin-top: 94px;
-  padding-bottom: 115px;
+  margin-top: 60px;
 }
 .flex-button-item {
   display: flex;
-  justify-content: center;
 }
+.portfolio_button-list {
+  margin-right: 8px;
+  margin-bottom: 15px;
 
+  &:last-child {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  &:nth-child(4n) {
+    margin-bottom: 0px;
+  }
+}
 .button-nav-portfolio {
-  margin-right: 10px;
   border: none;
   padding: 5px 20px;
   font-style: normal;
@@ -80,5 +88,29 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background-color: var(--accent-color);
+  }
+}
+@media screen and (max-width: 767px) {
+  .flex-button-item {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  .button-navigate {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-navigate {
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+  .flex-button-item {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-navigate {
+    margin-top: 94px;
+    margin-bottom: 50px;
   }
 }
