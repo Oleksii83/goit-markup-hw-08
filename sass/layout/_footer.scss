@@ -210,7 +210,13 @@
   }
   .form-footer {
     display: flex;
-    // align-items: flex-end;
+  }
+  .footer__nav-list,
+  .footer-block {
+    text-align: start;
+  }
+  .footer-text-item {
+    text-align: start;
   }
   .footer-input {
     width: 358px;

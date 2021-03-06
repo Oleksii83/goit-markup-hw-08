@@ -3,6 +3,11 @@
 }
 .points {
   padding-top: 25px;
+  padding-bottom: 60px;
+}
+
+.ant-background {
+  height: 120px;
 }
 
 .points-svg {
@@ -80,6 +85,9 @@
   }
   .points {
     width: 1200px;
+  }
+  .points-heading {
+    text-align: start;
   }
   .points__list {
     width: 270px;

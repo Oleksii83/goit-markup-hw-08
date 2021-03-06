@@ -407,7 +407,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    padding-left: 200px;
     font-size: 26px;
     line-height: 31px;
   }
@@ -497,10 +496,13 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 50px;
+    margin-left: 0px;
   }
   .logo {
     padding-top: 25px;
@@ -522,6 +524,16 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .addres-svg {
+    height: 12px;
+    width: 16px;
+  }
+  .addres__container {
+    margin-left: auto;
+  }
+  .tel-svg {
+    height: 16px;
   }
   .addres-title {
     padding-bottom: 0px;
@@ -597,8 +609,14 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .hero__text {
+    font-size: 44px;
+    line-height: 1.363;
+  }
   .hero {
     max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
     background-image: url("../img/mobile/Hero-desk.png");
   }
 }
@@ -613,6 +631,11 @@ img {
 
 .points {
   padding-top: 25px;
+  padding-bottom: 60px;
+}
+
+.ant-background {
+  height: 120px;
 }
 
 .points-svg {
@@ -698,6 +721,9 @@ img {
   }
   .points {
     width: 1200px;
+  }
+  .points-heading {
+    text-align: start;
   }
   .points__list {
     width: 270px;
@@ -852,6 +878,10 @@ img {
     padding-bottom: 95px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .comand__heading {
+    font-size: 36px;
+    line-height: 1.166;
   }
   .comand__list {
     width: 270px;
@@ -1073,6 +1103,10 @@ img {
   .regular-customers {
     padding-top: 95px;
     padding-bottom: 95px;
+  }
+  .customer-heading {
+    font-size: 36px;
+    line-height: 1.166;
   }
   .customer-list-item {
     width: 170px;
@@ -1333,6 +1367,13 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .footer__nav-list,
+  .footer-block {
+    text-align: start;
+  }
+  .footer-text-item {
+    text-align: start;
   }
   .footer-input {
     width: 358px;

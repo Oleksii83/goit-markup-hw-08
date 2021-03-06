@@ -65,8 +65,9 @@
 @media screen and (min-width: 1200px) {
   .address {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
-    margin-left: 50px;
+    margin-left: 0px;
   }
   .logo {
     padding-top: 25px;
@@ -80,6 +81,17 @@
   .icon-tel {
     display: flex;
     justify-content: center;
+  }
+  .addres-svg {
+    height: 12px;
+    width: 16px;
+  }
+
+  .addres__container {
+    margin-left: auto;
+  }
+  .tel-svg {
+    height: 16px;
   }
   .addres-title {
     padding-bottom: 0px;
